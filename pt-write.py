@@ -46,8 +46,7 @@ sub2 = 2    #possible words after next word
 # 3. words likely to satisfy both of the above conditions (i.e., following that 2-gram sequence)
 # 4. the baseline frequency of words in the source
 
-# main function for writing sentences
-vision = 2                  # in theory, this defines how many words back the program looks. for now, it has to be 2
+vision = 2                  # this defines how many words back the program looks. in this iteration of the program, it has to be 2
 weight_baseline = .01       # weight given to the list of most frequent words in the overall dictionary
 weight_2 = 1                 # weight given to the list of words occurring most frequently 2 after the 2nd most recent word typed
 weight_1 = 3                 # weight given to the list of words occurring most frequently 1 after the 1st most recent word typed
@@ -280,7 +279,8 @@ def predwrite(D,num_opts,wtlist):
     return
 
 
-### TESTING ###
+### SAMPLE USE ###
+# assumes subdirectory called 'texts' with a document called 'strunk' in it
 
 strunk = makedict('strunk1918')
 predwrite(strunk,20,[.0000001,2,1,10])
