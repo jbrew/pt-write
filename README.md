@@ -1,4 +1,4 @@
 # pt-write
-custom predictive text writing engine
+custom predictive text writing engine (old, bare-bones iteration of pt-voicebox. Keeping this here in case it's instructive to see a pared-down version)
 
-This program uses markov chains to offer suggestions for the next word, among which the user chooses.
+This program uses a markov chain–like algorithm to offer suggestions for the next word, among which the user chooses
